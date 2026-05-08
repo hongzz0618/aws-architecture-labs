@@ -1,50 +1,67 @@
-# 🌩️ AWS Architecture Collection
+# AWS Architecture Portfolio
 
-Welcome! This repository is a curated set of **7+ popular AWS architectures**, each designed to solve a real-world problem using cloud-native services.
+Welcome to my **AWS Architecture Portfolio**. This GitHub Pages site is a portfolio hub for **8 AWS architecture projects**, each maintained in a separate architecture repository.
 
-> 🛠️ **Note:** These architectures are not final. I'm continuously improving and updating them as I learn and build more—so expect changes and enhancements over time.
+Each architecture project lives in its own repository with its own documentation and implementation details. The goal of this hub is to make the portfolio easier to review and to demonstrate AWS architecture, backend and cloud engineering, Terraform, and architecture communication skills.
 
-Each architecture includes:
-
-- 📐 **Architecture diagram**
-- 🧱 **Terraform code** to deploy the infrastructure
-- 🧪 **Example app or assets**
-- 📘 **Step-by-step deployment guide**
+> **Current state:** These projects are learning-focused portfolio examples. They are being improved over time and are not presented as production-ready systems.
 
 ---
 
-## 🧭 Architectures Overview
+## Portfolio Focus
 
-Explore practical AWS architectures. Each example includes Terraform code, diagrams, and deployment steps.
-
-| 🌟 Architecture | 📝 Description | 🌍 Real-World Use Case |
-|----------------|----------------|------------------------|
-| [🌐 **Static Website Hosting**](https://github.com/hongzz0618/aws-static-website-hosting) | Host a secure, scalable website using S3 and CloudFront | Marketing sites, documentation portals |
-| [⚙️ **Serverless API Backend**](https://github.com/hongzz0618/aws-serverless-api-backend) | Build a backend with Lambda and API Gateway | Mobile apps, microservices |
-| [🗃️ **Data Lake**](https://github.com/hongzz0618/aws-data-lake) | Store and analyze large datasets | Business intelligence, analytics |
-| [🔁 **Event-Driven Processing**](https://github.com/hongzz0618/aws-event-driven-processing) | React to events using EventBridge and Lambda | File uploads, automation workflows |
-| [📡 **Real-Time Data Streaming**](https://github.com/hongzz0618/aws-realtime-streaming) | Process live data with Kinesis | IoT, live dashboards |
-| [🐳 **Containerized Web App**](https://github.com/hongzz0618/aws-containerized-web-app) | Deploy apps in containers using ECS Fargate | Scalable web platforms |
-| [🚀 **CI/CD Pipeline**](https://github.com/hongzz0618/aws-ci-cd) | Automate deployments with CodePipeline | DevOps workflows, continuous delivery |
-| [✨ **GenAI-Powered**](https://github.com/hongzz0618/aws-genai-starter) | Integrate Generative AI with AWS services | AI-driven chatbots, content generation, intelligent workflows |
-
-> 🔗 Each link will take you to a dedicated repository with code, diagrams, and instructions.
+- AWS architecture patterns
+- Serverless backend design
+- Event-driven systems
+- Containerized applications
+- Data and analytics patterns
+- CI/CD automation
+- Security, observability, scalability, and cost trade-offs
 
 ---
 
-## 🧠 Why This Project?
+## Architecture Overview
 
-This collection helps you:
+| Architecture | Pattern | Main AWS Services / Pattern | Real-world use case | Status | Repository |
+|---|---|---|---|---|---|
+| Static Website Hosting | Static web delivery | Amazon S3, Amazon CloudFront, DNS and edge caching | Marketing sites, documentation portals, portfolio sites | Basic | [View repository](https://github.com/hongzz0618/aws-static-website-hosting) |
+| Serverless API Backend | Serverless backend | Amazon API Gateway, AWS Lambda, managed data persistence | Mobile backends, microservices, lightweight API platforms | Improving | [View repository](https://github.com/hongzz0618/aws-serverless-api-backend) |
+| Data Lake | Data and analytics | Amazon S3 data lake pattern, cataloging, query and analytics services | Business intelligence, analytics, centralized data storage | Basic | [View repository](https://github.com/hongzz0618/aws-data-lake) |
+| Event-Driven Processing | Event-driven architecture | Amazon EventBridge, AWS Lambda, asynchronous workflows | File processing, automation workflows, decoupled service integration | Basic | [View repository](https://github.com/hongzz0618/aws-event-driven-processing) |
+| Real-Time Data Streaming | Streaming data pipeline | Amazon Kinesis, real-time ingestion and processing | IoT events, live dashboards, operational telemetry | Basic | [View repository](https://github.com/hongzz0618/aws-realtime-streaming) |
+| Containerized Web App | Containerized application platform | Amazon ECS, AWS Fargate, container deployment pattern | Scalable web applications, backend services, containerized workloads | Basic | [View repository](https://github.com/hongzz0618/aws-containerized-web-app) |
+| CI/CD Pipeline | Deployment automation | AWS CodePipeline, build and deployment workflow | DevOps workflows, release automation, continuous delivery | Basic | [View repository](https://github.com/hongzz0618/aws-ci-cd) |
+| GenAI-Powered | Generative AI starter architecture | AWS AI services and application integration patterns | AI chat assistants, content generation, intelligent workflows | Basic | [View repository](https://github.com/hongzz0618/aws-genai-starter) |
 
-- Learn AWS by building real solutions
-- Understand how services work together
-- Practice Infrastructure as Code with Terraform
-- Prepare for DevOps & AWS Architect interviews
+### Status Notes
+
+- **Basic** = initial deployable baseline or early implementation.
+- **Improving** = actively being enhanced with better documentation, security, observability, cost notes, and trade-offs.
+- **Portfolio-ready** = target state, not currently claimed.
 
 ---
 
-## 🔗 Connect With Me
+## Recommended Review Path
 
-💼 [LinkedIn – Zhou Hong](https://www.linkedin.com/in/hongzz/)
+1. Start with **Serverless API Backend**.
+2. Then review **Containerized Web App**.
+3. Then review **CI/CD Pipeline**.
+4. Then explore the remaining architecture patterns.
 
-Feel free to open issues or pull requests to improve any architecture or suggest new ones!
+---
+
+## Roadmap
+
+| Phase | Focus |
+|---|---|
+| Phase 1 | Improve the portfolio hub |
+| Phase 2 | Standardize sub-repository documentation |
+| Phase 3 | Deepen Serverless API Backend |
+| Phase 4 | Deepen Containerized Web App |
+| Phase 5 | Improve CI/CD, security, observability, and cost documentation |
+
+---
+
+## Connect
+
+[LinkedIn – Zhou Hong](https://www.linkedin.com/in/hongzz/)
