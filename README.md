@@ -1,96 +1,84 @@
 # AWS Architecture Portfolio Hub
 
-This repository is the central portfolio hub for **8 AWS architecture projects** focused on backend, cloud engineering, and practical AWS design patterns.
+This repository is the central hub for my **AWS architecture portfolio**, focused on backend and cloud engineering with Node.js, TypeScript, AWS Serverless, Terraform, and cloud architecture.
 
-The actual architecture implementations live in separate repositories linked below. This hub is not a deployable infrastructure repository and does not contain Terraform code, application code, or environment-specific deployment assets.
+The architecture implementations live in separate repositories linked below. This hub is not a deployable infrastructure repository and does not contain Terraform code, application code, or environment-specific deployment assets.
 
 ## Portfolio Goal
 
-The goal of this portfolio is to demonstrate the ability to design, explain, and compare common AWS architectures used in backend and cloud engineering roles.
+The goal of this portfolio is to make the strongest AWS backend and cloud architecture work easy to review for CV screening, interviews, and technical discussion.
 
-It is intended to support CV screening, technical interviews, and project discussions by showing:
+It demonstrates:
 
-- Practical understanding of AWS service combinations
-- Awareness of backend, serverless, event-driven, container, data, and CI/CD patterns
-- Ability to document architecture decisions clearly
-- Consideration of security, observability, scalability, and cost trade-offs
-- Continuous improvement through focused, realistic project iterations
+- Backend and cloud architecture patterns on AWS
+- Serverless API design, containerized application deployment, and managed AI application integration
+- Terraform and Infrastructure as Code concepts through linked project repositories
+- Awareness of security, observability, scalability, and cost trade-offs
+- Clear architecture communication without presenting the examples as production-ready systems
 
-These projects are portfolio and learning-oriented architecture examples. They are not presented as production-ready systems.
+These projects are portfolio and learning-oriented architecture examples. The maturity labels below are intentionally modest.
 
-## What This Repository Is
+## Recommended Review Path
 
-This repository is the central index for the AWS Architecture Portfolio.
+If you only review three projects, start with:
 
-Each architecture has its own dedicated repository. The linked repositories contain the relevant implementation details, diagrams, Terraform or Infrastructure as Code examples, deployment notes, and project-specific documentation.
+1. [aws-serverless-api-backend](https://github.com/hongzz0618/aws-serverless-api-backend) - strongest fit for backend/serverless API discussion.
+2. [aws-genai-starter](https://github.com/hongzz0618/aws-genai-starter) - shows cloud application design around managed GenAI capabilities.
+3. [aws-containerized-web-app](https://github.com/hongzz0618/aws-containerized-web-app) - shows container deployment, networking, and service operation concepts.
 
-Use this hub to compare the architecture patterns, understand the skills demonstrated by each project, and navigate to the individual repositories for deeper technical detail.
+These are the featured projects and the clearest review path for backend/cloud engineering roles. The remaining repositories are still part of the portfolio, but they should be treated as supporting AWS architecture references rather than equally deep projects.
 
-## Skills Demonstrated
+## Featured Projects
 
-This portfolio demonstrates exposure to AWS backend and cloud engineering topics including:
+| Project | What it demonstrates | Main AWS services | Why it is relevant for backend/cloud roles | Current maturity/status |
+|---|---|---|---|---|
+| [aws-serverless-api-backend](https://github.com/hongzz0618/aws-serverless-api-backend) | Serverless API architecture, request handling, persistence, and backend service boundaries. | Amazon API Gateway, AWS Lambda, Amazon DynamoDB, IAM, Amazon CloudWatch. | Directly maps to API backend work, serverless application design, service integration, and discussions about validation, IAM, observability, scaling, and cost. | Improving. This is the main project being deepened with clearer API design notes, security considerations, observability notes, and cost trade-offs. |
+| [aws-genai-starter](https://github.com/hongzz0618/aws-genai-starter) | A starter architecture for integrating managed GenAI capabilities into a cloud application. | Amazon Bedrock, AWS Lambda, API/application integration patterns, IAM, Amazon CloudWatch. | Relevant for teams adding AI-assisted workflows while still needing backend fundamentals: service boundaries, permissions, operational visibility, and cost awareness. | Basic. Useful as a focused GenAI architecture reference, with room to deepen implementation detail and operational notes. |
+| [aws-containerized-web-app](https://github.com/hongzz0618/aws-containerized-web-app) | Containerized web application architecture, service deployment, networking, and scaling concepts. | Amazon ECS, AWS Fargate, Elastic Load Balancing, Amazon EFS, Amazon VPC, IAM, Amazon CloudWatch. | Supports discussion of backend service hosting outside pure serverless, including container operations, traffic routing, health checks, scaling, and deployment flow. | Basic. A baseline container architecture reference that should be reviewed as a foundation rather than a production platform claim. |
 
-- AWS architecture patterns for common real-world workloads
-- Terraform and Infrastructure as Code concepts
-- Serverless backend design with API Gateway, Lambda, DynamoDB, and related services
-- Event-driven architecture using managed AWS event and messaging services
-- Containerized application deployment patterns
-- Data lake, streaming, and analytics-oriented cloud patterns
-- CI/CD workflow design for application and infrastructure delivery
-- Security awareness, including IAM, encryption, access boundaries, and least privilege
-- Observability awareness, including logs, metrics, tracing, and alerting considerations
-- Cost awareness, including service selection, scaling behavior, and optimization trade-offs
+## Additional AWS Architecture References
 
-## Architecture Overview
+These repositories show breadth across common AWS architecture patterns. They are included to demonstrate wider exposure to AWS services and design choices, but they are not all equally deep.
 
-| Architecture | Main AWS Services / Pattern | Real-world use case | Key skill demonstrated | Current maturity | Repository link |
-|---|---|---|---|---|---|
-| Static Website Hosting | S3 and CloudFront static hosting pattern | Marketing sites, documentation portals, portfolio sites | Static hosting, CDN delivery, DNS, and TLS concepts | Basic | [Repository](https://github.com/hongzz0618/aws-static-website-hosting) |
-| Serverless API Backend | API Gateway, Lambda, and DynamoDB serverless API pattern | Mobile backends, web APIs, microservices | Serverless backend design and API integration | Improving | [Repository](https://github.com/hongzz0618/aws-serverless-api-backend) |
-| Data Lake | S3-based data lake and analytics pattern | Analytics foundations, business intelligence, data storage | Data organization, query patterns, analytics architecture | Basic | [Repository](https://github.com/hongzz0618/aws-data-lake) |
-| Event-Driven Processing | EventBridge, Lambda, and messaging-oriented event pattern | File processing, automation workflows, async business events | Event-driven system design and decoupling | Basic | [Repository](https://github.com/hongzz0618/aws-event-driven-processing) |
-| Real-Time Data Streaming | Kinesis-style streaming ingestion pattern | IoT events, live dashboards, streaming ingestion | Streaming ingestion and near-real-time processing | Basic | [Repository](https://github.com/hongzz0618/aws-realtime-streaming) |
-| Containerized Web App | ECS/Fargate-style container application pattern | Scalable web platforms and backend services | Container deployment, networking, and service scaling concepts | Basic | [Repository](https://github.com/hongzz0618/aws-containerized-web-app) |
-| CI/CD Pipeline | AWS managed CI/CD pipeline pattern | Automated build, test, and deployment workflows | Delivery automation and deployment pipeline design | Basic | [Repository](https://github.com/hongzz0618/aws-ci-cd) |
-| GenAI-Powered Application | Managed GenAI application integration pattern | AI-assisted workflows, chatbots, content generation | Integrating managed GenAI services into cloud applications | Basic | [Repository](https://github.com/hongzz0618/aws-genai-starter) |
+| Repository | Architecture reference | Main AWS services / pattern | Current maturity/status |
+|---|---|---|---|
+| [aws-static-website-hosting](https://github.com/hongzz0618/aws-static-website-hosting) | Static website hosting and CDN delivery. | Amazon S3, Amazon CloudFront, DNS/TLS concepts. | Basic supporting reference. |
+| [aws-data-lake](https://github.com/hongzz0618/aws-data-lake) | Data lake and analytics foundation. | Amazon S3 data lake pattern, cataloging, query and analytics services. | Basic supporting reference. |
+| [aws-event-driven-processing](https://github.com/hongzz0618/aws-event-driven-processing) | Event-driven processing and asynchronous workflow design. | Amazon EventBridge, AWS Lambda, managed messaging/event patterns. | Basic supporting reference. |
+| [aws-realtime-streaming](https://github.com/hongzz0618/aws-realtime-streaming) | Real-time ingestion and streaming architecture. | Amazon Kinesis-style streaming ingestion and processing pattern. | Basic supporting reference. |
+| [aws-ci-cd](https://github.com/hongzz0618/aws-ci-cd) | Delivery automation and CI/CD workflow design. | AWS CodePipeline-style build, test, and deployment workflow. | Basic supporting reference. |
 
-Serverless API Backend is currently marked as Improving because it is the first architecture being actively deepened with clearer API design notes, security considerations, observability notes, and cost trade-offs. The other projects are currently treated as Basic until their documentation and implementation baselines are reviewed and improved.
-
-## Project Maturity
-
-The maturity labels are intentionally modest and reflect the current portfolio status of each linked project. Portfolio-ready is a target state for the portfolio, not a current label applied to any project in this hub.
+## Maturity Labels
 
 | Maturity | Meaning |
 |---|---|
-| Basic | Deployable baseline or initial implementation exists in the linked repository. |
-| Improving | The project is being enhanced with better documentation, security notes, observability notes, cost notes, and architecture trade-offs. |
-| Portfolio-ready | Target state where a project is suitable for CV and interview discussion, with enough structure to explain the architecture, service choices, and trade-offs clearly. |
+| Basic | Initial implementation or architecture baseline exists in the linked repository. |
+| Improving | The project is being enhanced with clearer documentation, security notes, observability notes, cost notes, and architecture trade-offs. |
+| Portfolio-ready | Target state where a project is suitable for deeper CV and interview discussion, with enough structure to explain architecture choices and trade-offs clearly. |
 
-None of the projects are described as production-ready. The focus is on clear architecture communication, practical AWS learning, and steady improvement.
+None of the projects are described as production-ready. The focus is clear architecture communication, practical AWS learning, and steady improvement.
+
+## CV and Interview Relevance
+
+This portfolio is designed to support backend and cloud engineering applications by making the most relevant work easy to find first.
+
+The strongest discussion areas are:
+
+- Explaining service selection and trade-offs for serverless and containerized backends
+- Discussing how IAM, observability, cost, and scalability would be improved over time
+- Comparing serverless, containerized, event-driven, data, streaming, and CI/CD architectures
+- Showing practical familiarity with Terraform and Infrastructure as Code through the linked implementation repositories
+- Communicating cloud architecture clearly and honestly
 
 ## Roadmap
 
 | Phase | Focus | Outcome |
 |---|---|---|
-| Phase 1 | Improve the main portfolio hub | Make this README a clear landing page for AWS backend and cloud engineering roles. |
-| Phase 2 | Standardize sub-repository READMEs | Align each project around consistent sections for overview, services, architecture diagram, deployment notes, trade-offs, and next steps. |
+| Phase 1 | Improve the main portfolio hub | Make the README and GitHub Pages content a clear landing point for backend/cloud engineering review. |
+| Phase 2 | Standardize sub-repository READMEs | Align project documentation around overview, services, architecture diagram, deployment notes, trade-offs, and next steps. |
 | Phase 3 | Deepen Serverless API Backend | Improve API design notes, IAM boundaries, validation, observability, and cost considerations. |
-| Phase 4 | Deepen Containerized Web App | Improve ECS/Fargate architecture notes, networking, scaling, health checks, and deployment flow. |
-| Phase 5 | Improve CI/CD, security, observability, and cost documentation | Add clearer cross-project notes on delivery pipelines, monitoring, logging, least privilege, and cost drivers. |
-
-## CV and Interview Relevance
-
-This portfolio is designed to support AWS backend and cloud engineering applications by making the architecture work easy to review and discuss.
-
-For CV screening, it provides a concise map of AWS patterns, services, and project themes. For interviews, it gives concrete examples to discuss service selection, trade-offs, scaling behavior, operational concerns, and future improvements.
-
-The strongest interview use cases are:
-
-- Explaining why specific AWS services were selected for each workload
-- Comparing serverless, containerized, event-driven, and data-oriented architectures
-- Discussing how security, observability, and cost considerations would be improved over time
-- Showing practical familiarity with Terraform and Infrastructure as Code through the linked implementation repositories
-- Demonstrating the ability to communicate architecture clearly and honestly
+| Phase 4 | Deepen GenAI Starter and Containerized Web App | Improve GenAI application boundaries and container architecture notes, including networking, scaling, health checks, and deployment flow. |
+| Phase 5 | Improve supporting references | Add clearer cross-project notes on CI/CD, security, observability, cost drivers, data, streaming, and event-driven patterns. |
 
 ## Feedback
 

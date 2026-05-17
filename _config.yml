@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 title: "AWS Architecture Portfolio"
-description: "Real-world AWS architecture portfolio focused on backend, cloud engineering, Terraform, and architecture trade-offs."
+description: "AWS architecture portfolio focused on backend, cloud engineering, Terraform, and architecture trade-offs."
 show_downloads: false
 
 plugins:
