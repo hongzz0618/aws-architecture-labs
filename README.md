@@ -1,33 +1,15 @@
-# AWS Backend Architecture Projects
+# AWS Architecture Labs — Archived
 
-This repository groups three AWS backend projects built with Node.js, TypeScript, Terraform, serverless services, containers, and managed AWS integrations.
+This repository was previously used as an index for several AWS architecture exercises.
 
-Each project lives in its own repository and contains its own application code, infrastructure, tests, documentation, and architecture decisions.
+The maintained projects now live independently:
 
-## Projects
+- [AWS Serverless API Backend](https://github.com/hongzz0618/aws-serverless-api-backend)
+- [AWS Containerized Web App](https://github.com/hongzz0618/aws-containerized-web-app)
+- [AWS GenAI Starter](https://github.com/hongzz0618/aws-genai-starter)
 
-### [AWS Serverless API Backend](https://github.com/hongzz0618/aws-serverless-api-backend)
-
-A serverless TypeScript API using API Gateway, Lambda, DynamoDB, Terraform, and GitHub Actions.
-
-### [AWS Containerized Web App](https://github.com/hongzz0618/aws-containerized-web-app)
-
-A containerized TypeScript application running on ECS Fargate behind an Application Load Balancer.
-
-### [AWS GenAI Starter](https://github.com/hongzz0618/aws-genai-starter)
-
-A serverless backend integrating Amazon Bedrock with Lambda, API Gateway, DynamoDB, and Terraform.
-
-## About This Repository
-
-This repository was originally created as the main index for a broader collection of AWS architecture exercises.
-
-The individual projects are now maintained independently, so their repositories are the source of truth for implementation details, current capabilities, limitations, and future improvements.
-
-This repository remains public as a lightweight project index, but it is no longer the main entry point.
-
-## Main Entry Point
-
-For the current project overview, visit:
+For the current technical overview, visit:
 
 [Hong Zhou — Backend Engineering](https://hongzz0618.github.io/)
+
+This repository is archived and is no longer maintained.
