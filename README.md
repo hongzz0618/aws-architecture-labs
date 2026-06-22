@@ -1,83 +1,33 @@
-# AWS Backend Architecture Reference Hub
+# AWS Backend Architecture Projects
 
-This repository is a reference hub for backend-focused AWS architecture projects using Node.js, TypeScript, Terraform, serverless services, containers, and managed cloud integrations.
+This repository groups three AWS backend projects built with Node.js, TypeScript, Terraform, serverless services, containers, and managed AWS integrations.
 
-The architecture implementations live in separate repositories linked below. This hub is not a deployable infrastructure repository and does not contain Terraform code, application code, or environment-specific deployment assets.
+Each project lives in its own repository and contains its own application code, infrastructure, tests, documentation, and architecture decisions.
 
-## Reference Goal
+## Projects
 
-The goal of this collection is to make AWS backend and cloud architecture examples easy to review, compare, and discuss from a technical perspective.
+### [AWS Serverless API Backend](https://github.com/hongzz0618/aws-serverless-api-backend)
 
-It demonstrates:
+A serverless TypeScript API using API Gateway, Lambda, DynamoDB, Terraform, and GitHub Actions.
 
-- Backend and cloud architecture patterns on AWS
-- Serverless API design, containerized application deployment, and managed model integration
-- Terraform and Infrastructure as Code concepts through linked project repositories
-- Awareness of security, observability, scalability, and cost trade-offs
-- Clear architecture communication without presenting the examples as deployable production systems
+### [AWS Containerized Web App](https://github.com/hongzz0618/aws-containerized-web-app)
 
-These projects are reference and learning-oriented architecture examples. The maturity labels below are intentionally modest.
+A containerized TypeScript application running on ECS Fargate behind an Application Load Balancer.
 
-## Recommended Review Path
+### [AWS GenAI Starter](https://github.com/hongzz0618/aws-genai-starter)
 
-If you only review three projects, start with:
+A serverless backend integrating Amazon Bedrock with Lambda, API Gateway, DynamoDB, and Terraform.
 
-1. [aws-serverless-api-backend](https://github.com/hongzz0618/aws-serverless-api-backend) - most directly aligned for backend/serverless API discussion.
-2. [aws-containerized-web-app](https://github.com/hongzz0618/aws-containerized-web-app) - shows container deployment, networking, and service operation concepts.
-3. [aws-genai-starter](https://github.com/hongzz0618/aws-genai-starter) - shows cloud application design around managed model capabilities.
+## About This Repository
 
-These are the featured projects and the clearest review path for backend and cloud architecture topics.
+This repository was originally created as the main index for a broader collection of AWS architecture exercises.
 
-## Project Comparison
+The individual projects are now maintained independently, so their repositories are the source of truth for implementation details, current capabilities, limitations, and future improvements.
 
-Use this comparison to choose the first project to inspect. The Serverless API Backend is the main backend discussion project, the Containerized Web App is best for ECS and infrastructure discussion, and the GenAI Starter is best for managed model integration discussion.
+This repository remains public as a lightweight project index, but it is no longer the main entry point.
 
-| Project | Main pattern | Core AWS services | Runtime / language | IaC | CI / validation | Testing | Observability | Main limitation / next step | Best discussion angle |
-|---|---|---|---|---|---|---|---|---|---|
-| [aws-serverless-api-backend](https://github.com/hongzz0618/aws-serverless-api-backend) | REST-style serverless item API | API Gateway, Lambda, DynamoDB, IAM, CloudWatch | TypeScript Lambda handlers | Terraform | GitHub Actions for typecheck, tests, build, audit, packaging, Terraform fmt, and Terraform validate | Vitest unit tests; optional post-deployment smoke test helper | Structured Lambda logs, API Gateway access logs, CloudWatch metrics, and basic alarms | Add auth/access control, remote state, deployment flow, and controlled smoke tests | Main backend API discussion: validation, IAM, observability, cost, auth, and deployment trade-offs |
-| [aws-containerized-web-app](https://github.com/hongzz0618/aws-containerized-web-app) | Containerized web app behind a public ALB with private ECS tasks | ECS Fargate, ALB, ECR, VPC, IAM, CloudWatch Logs | Node.js / TypeScript sample app in Docker | Terraform | GitHub Actions for app build/test, Docker image build, Terraform fmt, init, and validate | Sample app tests | ECS task logs and ALB target health checks | No automatic deployment, ECR image publishing, HTTPS, or service autoscaling yet | Container infrastructure discussion: Fargate networking, ALB routing, image deployment, and operational boundaries |
-| [aws-genai-starter](https://github.com/hongzz0618/aws-genai-starter) | Serverless managed-model request path with chat history | API Gateway HTTP API, Lambda, Bedrock Converse, DynamoDB, IAM, CloudWatch | TypeScript Lambda handler | Terraform | GitHub Actions for typecheck, unit tests, build, Lambda packaging, Terraform fmt, and Terraform validate | Unit tests | Logs, metrics, alarms, dashboard examples, optional notifications, and cost-signal examples | Scope CORS, model permissions, state, deployment permissions, and live validation before broader use | Managed model integration discussion: Bedrock calls, persistence, permissions, observability, and cost controls |
+## Main Entry Point
 
-## Featured Projects
+For the current project overview, visit:
 
-| Project | What it demonstrates | Main AWS services | Technical focus | Current maturity/status |
-|---|---|---|---|---|
-| [aws-serverless-api-backend](https://github.com/hongzz0618/aws-serverless-api-backend) | Serverless API architecture, request handling, persistence, and backend service boundaries. | Amazon API Gateway, AWS Lambda, Amazon DynamoDB, IAM, Amazon CloudWatch. | Directly maps to API backend work, serverless application design, service integration, and discussions about validation, IAM, observability, scaling, and cost. | Improving. This is the main project being deepened with clearer API design notes, security considerations, observability notes, and cost trade-offs. |
-| [aws-containerized-web-app](https://github.com/hongzz0618/aws-containerized-web-app) | Containerized web application architecture, service deployment, networking, and operational boundaries. | Amazon ECS, AWS Fargate, Elastic Load Balancing, Amazon ECR, Amazon VPC, IAM, Amazon CloudWatch. | Supports discussion of backend service hosting outside pure serverless, including container operations, traffic routing, health checks, scaling, and deployment flow. | Basic. A baseline container architecture reference that should be reviewed as a foundation rather than a production platform claim. |
-| [aws-genai-starter](https://github.com/hongzz0618/aws-genai-starter) | A starter architecture for integrating managed model capabilities into a cloud application. | Amazon API Gateway (HTTP API), AWS Lambda, Amazon Bedrock, Amazon DynamoDB, IAM, Amazon CloudWatch. | Relevant for systems that add model-assisted workflows while still needing backend fundamentals: service boundaries, permissions, operational visibility, and cost awareness. | Basic. Useful as a focused managed-model architecture reference, with room to deepen implementation detail and operational notes. |
-
-## Maturity Labels
-
-| Maturity | Meaning |
-|---|---|
-| Basic | Initial implementation or architecture baseline exists in the linked repository. |
-| Improving | The project is being enhanced with clearer documentation, security notes, observability notes, cost notes, and architecture trade-offs. |
-| Reference-ready | Documented enough to explain architecture choices, assumptions, limitations, and trade-offs clearly. |
-
-None of the projects are presented as deployable production systems. The focus is clear architecture communication, practical AWS learning, and steady improvement.
-
-## Technical Discussion Topics
-
-This collection is designed to make the most relevant backend and cloud architecture examples easy to find first.
-
-The main discussion areas are:
-
-- Explaining service selection and trade-offs for serverless and containerized backends
-- Discussing IAM, observability, scalability, and cost constraints
-- Comparing API Gateway, Lambda, and DynamoDB with ECS and Fargate deployment patterns
-- Showing practical familiarity with Terraform and Infrastructure as Code through linked implementation repositories
-- Documenting assumptions, limitations, and engineering trade-offs clearly
-
-## Roadmap
-
-| Phase | Focus | Outcome |
-|---|---|---|
-| Phase 1 | Improve the main reference hub | Make the README and GitHub Pages content a clear landing point for backend and cloud architecture topics. |
-| Phase 2 | Standardize sub-repository READMEs | Align project documentation around overview, services, architecture diagram, deployment notes, trade-offs, and next steps. |
-| Phase 3 | Deepen Serverless API Backend | Improve API design notes, IAM boundaries, validation, observability, and cost considerations. |
-| Phase 4 | Deepen Containerized Web App and GenAI Starter | Improve container architecture notes and managed-model application boundaries, including networking, scaling, health checks, deployment flow, and service permissions. |
-| Phase 5 | Add cross-project architecture notes | Add clearer notes on CI/CD, security, observability, and cost drivers across the three featured projects. |
-
-## Feedback
-
-Suggestions and technical improvements are welcome. The projects are updated iteratively as the architecture notes and implementation details become clearer.
+[Hong Zhou — Backend Engineering](https://hongzz0618.github.io/)
