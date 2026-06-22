@@ -1,9 +1,0 @@
-theme: jekyll-theme-cayman
-title: "AWS Architecture Reference Projects"
-description: "AWS architecture reference projects focused on backend systems, cloud engineering, Terraform, and architecture trade-offs."
-show_downloads: false
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jemoji
